@@ -1,0 +1,40 @@
+a.button {
+	background-color: green;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	font-size: 25px;
+	font-family: "Arial";
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 4px;
+}
+
+div.top {
+	background-color: #4CAF50;
+	width: device-width;
+	padding: 50px;
+	margin: 20px;
+}
+
+div.bot {
+	background-color: lightgrey;
+	width: device-width;
+	height: device-height;
+	padding: 50px;
+	margin: 20px;
+}
+
+body {
+	background-color: grey;
+}
+
+h1 {
+	color: black;
+	font-family: "Arial";
+}
+
+p {
+	color: red;
+}
