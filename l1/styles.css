@@ -1,33 +1,5 @@
-a.button {
-	background-color: green;
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	font-size: 25px;
-	font-family: "Arial";
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	margin: 4px 4px;
-}
-
-div.top {
-	background-color: #4CAF50;
-	width: device-width;
-	padding: 50px;
-	margin: 20px;
-}
-
-div.bot {
-	background-color: lightgrey;
-	width: device-width;
-	height: device-height;
-	padding: 50px;
-	margin: 20px;
-}
-
 body {
-	background-color: grey;
+	background-color: whitesmoke;
 }
 
 h1 {
@@ -36,5 +8,92 @@ h1 {
 }
 
 p {
-	color: red;
+	color: black;
+	font-family: "Arial";
+	font-size: 20px;
 }
+
+.code {
+	color: black;
+	font-family: "Courier New";
+	font-size: 14px;
+	background: darkgrey;
+	width: 1000px;
+	padding: 1em;
+}
+
+.top {
+	width: device-width;
+	padding: 1em;
+	margin: 1em;
+}
+
+.bot {
+	overflow: auto;
+	background-color: lightgrey;
+	width: device-width;
+	padding: 2em;
+	margin: 2em;
+	margin-top: 0em;
+}
+
+.img1 {
+	float: left;
+	padding: 2em;
+	height: 20em;
+	width: 13em;
+}
+
+.img2 {
+	float: left;
+	height: 4em;
+	width: 4em;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.img3 {
+	float: right;
+	height: 20em;
+	width: 20em;
+	padding: 3em;
+}
+
+.img4 {
+	float: right;
+	height: 20em;
+	width: 30em;
+	padding: 3em;
+}
+
+a.button {
+	border: none;
+	color: black;
+	padding: 1em 1em;
+	font-size: 20px;
+	font-family: "Arial";
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 4px;
+}
+
+a.button:hover {
+	color: lightsalmon;
+}
+
+a.selected {
+	color: lightsalmon;
+}
+
+a.mail:link {
+	text-decoration: none;
+	color: black;
+	font-family: "Arial";
+	font-size: 20px;
+	padding-left: 2em;
+}
+
+a.mail:hover, a.mail:active {
+	color: rgb(207, 134, 105);
+}
+
