@@ -2,77 +2,87 @@
 <html lang="pl">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="flex.css">
+	<link rel="stylesheet" href="link.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-	<div class="top">
-		<img class="img2" src="pwr.jpg">
-		<a class="button" href=index.html>START</a>
-		<a class="button" href=about.html>O MNIE</a>
-		<a class="button selected" href=projects.html>PROJEKTY</a>
+	<div class="wrapper wrapper-1">
+		<aside class="aside aside-3"><img class="img2" src="pwr.jpg"></aside>
+		<div class="main main-3">
+			<a class="button" href=index.html>START</a>
+			<a class="button" href=about.html>O MNIE</a>
+			<a class="button selected" href=projects.html>PROJEKTY</a>
+		</div>
 	</div>
-	<div class="bot">
-			<img class="img3" src="calendar.png">
-			<h1>Kalendarz</h1>
-			<p>Aplikacja mobilna przedstawiająca kalendarz z dodatkowymi funkcjami. Projekt realizowany w 4 osobowych grupach, z użyciem języka Kotlin i IDE Android Studio. 
-				Apolikacja posiadała własną bazę danych oraz system logowania. Można dodawać nowe wydarzenia, rocznice i odliczania. Najlepszym ułatwieniem jakie napisałem, 
-				było zmienianie widoczności paneli, zamiat używania skryptów lub tworzenia nowych klass.</p>
-				<div class="code"> imageCountdown.setOnClickListener {
+	<div class="wrapper">
+		<h2>Kalendarz</h2>
+		<article class="main main-1">
+			<p>Aplikacja mobilna przedstawiająca kalendarz z dodatkowymi funkcjami. 
+			Projekt realizowany w 4 osobowych grupach, z użyciem języka Kotlin i IDE Android Studio. 
+			Apolikacja posiadała własną bazę danych oraz system logowania. Można dodawać nowe wydarzenia, rocznice i odliczania. 
+			Najlepszym ułatwieniem jakie napisałem, było zmienianie widoczności paneli, zamiat używania skryptów lub tworzenia nowych klass.</p>
+			<p class="code">imageCountdown.setOnClickListener {
 					<br&emsp;>mode = 2
-					<br>&emsp;imageEvent.setImageResource(R.drawable.eventempty)
-					<br>&emsp;imageCountdown.setImageResource(android.R.drawable.star_big_on)
+					<br>&emsp;imageEvent.setImageResource( R.drawable.eventempty)
+					<br>&emsp;imageCountdown.setImageResource( android.R.drawable.star_big_on)
 					<br>&emsp;constraint2.visibility = View.GONE
 					<br>&emsp;constraint3.visibility = View.GONE
 					<br>&emsp;constraint2c.visibility = View.VISIBLE
-					<br>}
-					</div>
+					<br>}</p>
+		</article>
+		<aside class="aside aside-1"><br><img src="calendar.png"></aside>
 	</div>
-	<div class="bot">
-		<img class="img3" src="trylma.jpg">
-		<h1>Trylma</h1>
-		<p>Inaczej chińskie warcaby. Projekt realizowany w parach, polegał na zaimplementowaniu w Javie gry bazującej na architekturze klient-serwer. 
-			Możliwość gry od 2 do 6 graczy, gdzie każdy używając swojego klienta logował się do serwera. Wygrywała osoba która przeniosła wszystkie swoje pionki na przeciwną stronę planszy.
-			Największym wyzwaniem było zaprojektowanie bota, który wykonywałby w miarę logiczne ruchy. </p>
-			<div class="code">for(int z=1; z<=121; z++) {
-				<br>&emsp;if(pola[z].getColor() == playerColor) {
-					<br>&emsp;&emsp;for(int z2=1; z2<=121; z2++) {
-						<br>&emsp;&emsp;&emsp;if(isNextTo(pola[z2], pola[z]) && !pola[z2].isOccupied()) {
-							<br>&emsp;&emsp;&emsp;&emsp;distanceNew = Math.sqrt(Math.pow(Math.abs(targetX-pola[z2].x), 2) + Math.pow(Math.abs(targetY-pola[z2].y), 2));
-							<br>&emsp;&emsp;&emsp;&emsp;distanceOld = Math.sqrt(Math.pow(Math.abs(targetX-pola[z].x), 2) + Math.pow(Math.abs(targetY-pola[z].y), 2));
-							<br>&emsp;&emsp;&emsp;&emsp;if(distanceNew < shortest && distanceNew < distanceOld) {
+	<div class="wrapper">
+		<h2>Trylma</h2>
+		<article class="main main-2">
+			<p>Aplikacja mobilna przedstawiająca kalendarz z dodatkowymi funkcjami. 
+			Projekt realizowany w 4 osobowych grupach, z użyciem języka Kotlin i IDE Android Studio. 
+			Apolikacja posiadała własną bazę danych oraz system logowania. Można dodawać nowe wydarzenia, rocznice i odliczania. 
+			Najlepszym ułatwieniem jakie napisałem, było zmienianie widoczności paneli, zamiat używania skryptów lub tworzenia nowych klass.</p>
+			<p class="code">for(int z=1; z&lt;=121; z++) {
+				<br>&emsp;if( pola[z].getColor() == playerColor ) {
+					<br>&emsp;&emsp;for(int z2=1; z2&lt;=121; z2++) {
+						<br>&emsp;&emsp;&emsp;if( isNextTo(pola[z2], pola[z]) && !pola[z2].isOccupied() ) {
+							<br>&emsp;&emsp;&emsp;&emsp;distanceNew = Math.sqrt( Math.pow( Math.abs( targetX-pola[z2].x ), 2) + Math.pow( Math.abs( targetY-pola[z2].y ), 2));
+							<br>&emsp;&emsp;&emsp;&emsp;distanceOld = Math.sqrt( Math.pow( Math.abs( targetX-pola[z].x ), 2) + Math.pow( Math.abs( targetY-pola[z].y ), 2));
+							<br>&emsp;&emsp;&emsp;&emsp;if(distanceNew &lt; shortest && distanceNew &lt; distanceOld) {
 								<br>&emsp;&emsp;&emsp;&emsp;&emsp;shortest = distanceNew;
 								<br>&emsp;&emsp;&emsp;&emsp;&emsp;shortestOld = pola[z];
 								<br>&emsp;&emsp;&emsp;&emsp;&emsp;shortestNew = pola[z2];
 								<br>&emsp;&emsp;&emsp;&emsp;}
-								<br>&emsp;&emsp;&emsp;}</div>
+								<br>&emsp;&emsp;&emsp;}</p>
+		</article>
+		<aside class="aside aside-2"><br><img src="trylma.png"></aside>
 	</div>
-	<div class="bot">
-		<img class="img4" src="sql.png">
-		<h1>Klinika</h1>
-		<p>Projekt z przedmiotu bazy danchy. Polegał na stworzeniu kliniki lekarskiej, czyli zapisywaniu w bazie danych wizyt, badań i ich wyników poprzez użycie odpowiednich zapytań SQL.
-			Najciekawszą rzeczą jaką dopisałem było przeszukanie bazy po każdym wciśnięciu klawisza i wyświetlenie proponowanych pozycji poniżej okna wyszukiwań.
-		</p>
-		<div class="code">
-				try {
-					<br>&emsp;((PreparedStatement) searchPesel).setString(1, "%" + pesel + "%");
-					<br>&emsp;ResultSet res = ((PreparedStatement) searchPesel).executeQuery();
+	<div class="wrapper">
+		<h2>Klinika</h2>
+		<article class="main main-1">
+			<p>Projekt z przedmiotu bazy danchy. Polegał na stworzeniu kliniki lekarskiej, czyli zapisywaniu w bazie danych wizyt, 
+			badań i ich wyników poprzez użycie odpowiednich zapytań SQL. Najciekawszą rzeczą jaką dopisałem było przeszukanie 
+			bazy po każdym wciśnięciu klawisza i wyświetlenie proponowanych pozycji poniżej okna wyszukiwań.
+			</p>
+			<p class="code">try {
+					<br>&emsp;( (PreparedStatement) searchPesel ).setString(1, "%" + pesel + "%");
+					<br>&emsp;ResultSet res = ( (PreparedStatement) searchPesel ).executeQuery();
 					<br>&emsp;while (res.next()) {
-						<br>&emsp;&emsp;if(counter < 10) {
-							<br>&emsp;&emsp;&emsp;MenuItem item = new MenuItem(res.getString("pesel"));
-							<br>&emsp;&emsp;&emsp;entriesPopup.getItems().add(item);
-							<br>&emsp;&emsp;&emsp;item.setOnAction(new EventHandler<ActionEvent>() {
+						<br>&emsp;&emsp;if(counter &lt; 10) {
+							<br>&emsp;&emsp;&emsp;MenuItem item = new MenuItem( res.getString( "pesel" ));
+							<br>&emsp;&emsp;&emsp;entriesPopup.getItems().add( item );
+							<br>&emsp;&emsp;&emsp;item.setOnAction( new EventHandler&lt;ActionEvent&gt;() {
 									<br>&emsp;&emsp;&emsp;@Override
 									<br>&emsp;&emsp;&emsp;&emsp;public void handle(ActionEvent event) {
 									<br>&emsp;&emsp;&emsp;&emsp;...
 										<br>&emsp;} catch (SQLException ex) {
 											<br>&emsp;&emsp;ex.printStackTrace();
 											<br>&emsp;}
-											<br>&emsp;if (!entriesPopup.isShowing()) {
-												<br>&emsp;&emsp;entriesPopup.show(patientPesel, Side.BOTTOM, 0, 0);
+											<br>&emsp;if ( !entriesPopup.isShowing() ) {
+												<br>&emsp;&emsp;entriesPopup.show( patientPesel, Side.BOTTOM, 0, 0 );
 												<br>&emsp;}
-												<br>}
-		</div>
+												<br>}</p>
+		</article>
+		<aside class="aside aside-1"><br><img src="sql.png"></aside>
 	</div>
 </body>
 </html>

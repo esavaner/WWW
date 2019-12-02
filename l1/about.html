@@ -2,19 +2,40 @@
 <html lang="pl">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="flex.css">
+	<link rel="stylesheet" href="link.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-	<div class="top">
-		<img class="img2" src="pwr.jpg">
-		<a class="button" href=index.html>START</a>
-		<a class="button selected" href=about.html>O MNIE</a>
-		<a class="button" href=projects.html>PROJEKTY</a>
+	<div class="wrapper wrapper-1">
+		<aside class="aside aside-3"><img class="img2" src="pwr.jpg"></aside>
+		<div class="main main-3">
+			<a class="button" href=index.html>START</a>
+			<a class="button selected" href=about.html>O MNIE</a>
+			<a class="button" href=projects.html>PROJEKTY</a>
+		</div>
 	</div>
-	<div class="bot">
-		<h1>O mnie</h1>
-		<p>Jestem studentem Politechniki Wrocławskiej od 2017 roku. Podczas mojej nauki poznałem wiele nowych technologi pozwalających być dobrym programistą, jak również rzeczy pozwalające mi ...</p>
+	<div class="wrapper">
+		<article class="main">
+		<p>Jestem studentem Politechniki Wrocławskiej od 2017 roku. Podczas mojej nauki poznałem wiele nowych technologii, 
+			języków, algorytmów i sposobów pozwalających być dobrym programistą. 
+			Poniżej znajduje się lista do tej pory opanowanych przeze mnie w czasie studiów języków/technologii:
+			<ul>
+				<li>Java/Intellij Idea</li>
+				<li>C/C++</li>
+				<li>Kotlin/Android Studio</li>
+				<li>Go Lang</li>
+				<li>SQL + obsługa baz danych</li>
+				<li>Haskell</li>
+			</ul>
+		</p>
+		<p>Moim ulubionym językiem programowania jest C++, a najciekawsze według mnie zagadnienia informatyczne to programowanie obiektowe 
+		i różnego rodzaju algorytmy przeszukiwania struktur danych. Moimi zainteresowaniem poza zajęciami jest rozwiązywanie wszelkich 
+		łamigłówek typu kostki Rubika oraz jazda na rolkach agresywnych, a ostatnio zacząłem uczyć się jeździć na skateboardzie.
+		</p>
+		</article>
+		<aside class="aside"><img src="cpp.png"></aside>
 	</div>
 </body>
 </html>

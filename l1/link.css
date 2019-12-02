@@ -1,0 +1,20 @@
+a.button {
+	border: none;
+	padding: 1em 1em;
+	text-decoration: none;
+	margin: 4px 4px;
+}
+
+a.button:hover, a.selected {
+	color: lightsalmon;
+}
+
+a.mail:link {
+	text-decoration: none;
+    padding-left: 2em;
+    color: black;
+}
+
+a.mail:hover, a.mail:active {
+	color: rgb(207, 134, 105);
+}

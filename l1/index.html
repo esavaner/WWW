@@ -2,24 +2,33 @@
 <html lang="pl">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="flex.css">
+	<link rel="stylesheet" href="link.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-	<div class="top">
-		<img class="img2" src="pwr.jpg">
-		<a class="button selected" href=index.html>START</a>
-		<a class="button" href=about.html>O MNIE</a>
-		<a class="button" href=projects.html>PROJEKTY</a>
+	<div id="divmain" class="wrapper wrapper-1">
+		<noscript>
+			<aside class="aside aside-3"><img class="img2" src="pwr.jpg"></aside>
+			<div class="main main-3">
+				<a class="button selected" href=index.html>START</a>
+				<a class="button" href=about.html>O MNIE</a>
+				<a class="button" href=projects.html>PROJEKTY</a>
+			</div>
+		</noscript>
 	</div>
-	<div class="bot">
-			<img class="img1" src="profile.jpg">
+	<div class="wrapper">
+		<aside class="aside aside-2"><img class="img1" src="profile.jpg"></aside>
+			<article class="main main-4">
 			<h1>Filip Rurak</h1>
 			<p>Student Politechniki Wrocławskiej</p>
 			<p>Kontakt:</p>
-			<a class="mail" href="mailto:rurakf@gmail.com">email prywatny: rurakf@gmail.com</a><br><br>
-			<a class="mail"href="mailto:244960@student.pwr.edu.pl">email studencki: 244960@student.pwr.edu.pl</a>
+			&emsp;&emsp;email prywatny:<a class="mail" href="mailto:rurakf@gmail.com"><br>&emsp;&emsp;&emsp;rurakf@gmail.com</a><br><br>
+			&emsp;&emsp;email studencki:<a class="mail"href="mailto:244960@student.pwr.edu.pl"><br>&emsp;&emsp;&emsp;244960@student.pwr.edu.pl</a>
 			<p>&emsp;&emsp;telefon: 517562427</p>
+			</article>
 	</div>
+	<script src="menu.js"></script>
 </body>
 </html>
