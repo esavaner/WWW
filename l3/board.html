@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML5 Puzzle</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body onload="init();">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 col-md-4 col-lg-2 order-md-2 order-lg-2 p-2">
+                <h6>Width</h6>
+                <input id="x" type="text" class="w-100" placeholder="4">
+                <h6>Height</h6>
+                <input id="y" type="text" class="w-100" placeholder="4">
+                <div class="col p-1 justify-content-around">
+                    <button type="button" class="btn-primary" onclick="setSize()">Confirm</button>
+                    <button type="button" class="btn-primary" onclick="reset()">Reset</button>
+                </div>
+            </div>
+            <div class="col-sm-7 col-md-8 col-lg-6 order-md-3 order-lg-2" onmouseover="mouseStatus(true);" onmouseout="mouseStatus(false);">
+                <div id="around">
+                <canvas id="canvas" class='img-responsive' style="border: 1px solid black;"></canvas>
+            </div>
+            </div>
+            <div class="col-sm-3 col-md-12 col-lg-4 order-md-1 order-lg-3 p-2">
+                <h3>Pick image</h3>
+                <div id="gallery"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html
