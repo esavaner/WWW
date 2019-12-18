@@ -1,0 +1,66 @@
+.project {
+    background: #59595f;
+    height: 100%;;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: rgb(18, 18, 170);
+}
+
+a {
+    text-decoration: none;
+}
+
+.navigation {
+    color: rgb(200, 200, 200);
+    font-size: 200%;
+}
+
+.navigation:hover {
+    color: white;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.item {
+    background: #39393d;
+    color: rgb(200, 200, 200);
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 120%;
+}
+
+.tag {
+    margin-top: 20px;
+    color: rgb(200, 200, 200);
+    font-size: 200%;
+}
+
+.navleft {
+    margin-top: 20px;
+    margin-left: 80px;
+    background: #39393d;
+    font-size: 120%;
+}
+
+.point {
+    left: 22px;
+}
+
+.point:hover {
+    left: 25px;
+}
+
+.left {
+    color: rgb(200, 200, 200);
+}
+
+.left:hover {
+    color: white;
+}
