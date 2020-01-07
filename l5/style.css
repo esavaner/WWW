@@ -45,8 +45,9 @@ a {
 .navleft {
     margin-top: 20px;
     margin-left: 80px;
-    background: #39393d;
     font-size: 120%;
+    background: #39393d;
+    color: rgb(200, 200, 200);
 }
 
 .point {
